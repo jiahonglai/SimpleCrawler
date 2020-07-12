@@ -32,7 +32,7 @@ def crawl(url):
     fm.write(x)
 def geturl(page):
     session=requests.Session()
-    cookie=''
+    cookie=''#手动登录获取cookie
     session.headers = {'User-Agent':'Mozilla/5.0',
                         'Cookie':cookie}
     session.get('https://xueqiu.com/')
